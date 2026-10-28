@@ -16,20 +16,20 @@
 // element with ID "warmUpDate".
 
 // STEP 1: Create a new Date object using: let now = new Date();
-
+let now = new Data();
 // STEP 2: Use .getDay() to get the day of the week as a number.
 //         Sunday = 0, Monday = 1, Tuesday = 2, ... Saturday = 6
-
+let dayNum = now.getDay;
 // STEP 3: Create an array of day names:
 //         let days = ["Sunday", "Monday", "Tuesday", "Wednesday",
 //                     "Thursday", "Friday", "Saturday"];
-
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 // STEP 4: Use the day number as an index to get the day name
 //         from the array.
-
+let dayName = days[dayNum];
 // STEP 5: Display the day name in the element with ID "warmUpDate"
 //         using document.getElementById("warmUpDate").innerHTML
-
+document.getElementById("warmUpDate").innerHTML = dayName;
 
 // ============================================
 //  PART 1: Current Date Display
@@ -37,20 +37,20 @@
 // Display the current date in the format: M/D/YYYY
 // in the element with ID "myDate".
 // Example: "4/2/2025" (no leading zeros)
-
+let b = new Date();
 // STEP 6: Create a new Date object (or reuse the one from above).
-
+let month = b.getMonth() + 1;
 // STEP 7: Get the month using .getMonth()
 //         IMPORTANT: .getMonth() returns 0–11 (January = 0)
 //         so you must add 1 to get the correct month number.
-
+let day = b.getDay();
 // STEP 8: Get the day of the month using .getDate()
-
+let dayOfMonth = b.getDate();
 // STEP 9: Get the year using .getFullYear()
-
+let year = b.getFullYear();
 // STEP 10: Build the date string: month + "/" + day + "/" + year
 //          Display it in the element with ID "myDate"
-
+document.getElementById("myDate").innerHTML = month + "/" + day + "/" + year;
 
 // ============================================
 //  PART 2: Elapsed Timer
